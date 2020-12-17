@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/styles.css" rel="stylesheet">
+  <title>Spaut</title>
+</head>
+<body>
+  <h1 class="title">Spaut</h1>
+
+  <section class="information">
+    <h5 class="information__description">Sistema de Ponto Automático</h5>
+    <h6 class="information__version">Versão 22.16.10.18</h6>
+  </section>
+
+  <div class="time" id="clock"></div>
+
+  <section class="actions">
+    <form class="actions__auth">
+      <div class="actions__auth__photo">
+        <video class="actions__auth__photo__video" id="cameraImage" autoplay></video>
+        <div class="actions__auth__photo__date" id="date"></div>
+      </div>
+
+      <div class="actions__auth__password">
+        <div class="actions__auth__password__box">
+          <input class="actions__auth__password__input" placeholder="Digise Sua Senha" type="password">
+        </div>
+      </div>
+    </form>
+
+    <div class="actions__buttons">
+      <button class="actions__buttons__button">Consulta Pontos(-)</button>
+      <button class="actions__buttons__button">Saídas(+)</button>
+      <button class="actions__buttons__button">Gera AFD</button>
+    </div>
+  </section>
+
+  <script src="js/timeController.js"></script>
+  <script src="js/cameraController.js"></script>
+</body>
+</html>
