@@ -4,7 +4,7 @@ function showCameraVideo(stream) {
 }
 
 function startVideoFromCamera() {
-  const constraints = {video: {width: 150, height: 160}};
+  const constraints = {video: {width: 150, height: 160, apectRatio: 3/4}};
   navigator.mediaDevices.getUserMedia(constraints)
   .then(stream => showCameraVideo(stream))
   .catch(error => console.log('ERROR', error))

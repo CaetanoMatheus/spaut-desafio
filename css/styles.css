@@ -112,6 +112,7 @@ body {
   height: 100%;
   width: 100%;
   text-shadow: 1px 1px white;
+  color: black;
   font-size: 1.4rem;
 }
 
@@ -134,6 +135,7 @@ body {
   border-left: 2px solid var(--light-grey);
   font-size: 1.4rem;
   height: 50px;
+  color: black;
   background: linear-gradient(#eee, #474747);
   text-shadow: 1px 1px white;
 }
